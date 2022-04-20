@@ -13,7 +13,7 @@ function extractIncreasingSub(arr) {
     let newArr = [arr[0]];
     for (let i = 1; i < arr.length; i++) {
         let el = arr[i];
-        if (el >= newArr[newArr.length - 1]) { // взима се последният индекс от масива
+        if (el >= newArr[newArr.length - 1]) {
           newArr.push(el);
         }
     }
