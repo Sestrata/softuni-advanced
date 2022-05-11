@@ -1,7 +1,7 @@
 function search() {
 
    let userWord = document.getElementById('searchText').value;
-   let townsEl = Array.from(document.querySelectorAll('#towns li')); // правим го на масив
+   let townsEl = Array.from(document.querySelectorAll('#towns li'));
    let match = document.getElementById('result');
    let count = 0;
 
