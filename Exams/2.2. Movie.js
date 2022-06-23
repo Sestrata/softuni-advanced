@@ -21,7 +21,7 @@ class Movie {
     }
     endScreening(date, hall, tickets) {
         const screening = this.screenings.find(s => s.date == date && s.hall == hall)
-        if (screening == undefined) { // or: !screening, or: screening != true
+        if (screening == undefined) {
             throw new Error(`Sorry, there is no such screening for ${this.movieName} movie.`);
         }
         const index = this.screenings.indexOf(screening);
