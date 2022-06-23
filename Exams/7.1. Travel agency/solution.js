@@ -15,8 +15,8 @@ function solution() {
     let email = document.getElementById('email');
     if (fullName.value && email.value) {
       inputsFormDivs.forEach(div => {
-        let label = div.getElementsByTagName('label')[0];  // връща се масив и се взима първи елемент
-        let text = div.getElementsByTagName('input')[0];   // връща се масив и се взима първи елемент
+        let label = div.getElementsByTagName('label')[0];
+        let text = div.getElementsByTagName('input')[0];
         let li = document.createElement('li');
         li.textContent = `${label.textContent} ${text.value}`;
         infoPreview.appendChild(li);
